@@ -1,0 +1,136 @@
+Dispositivo: cuda
+GPU: NVIDIA A40
+[hp] lr=0.0009717775305059633  dim_oculta=64  batch_size=16
+
+Cargando dataset_enriquecido_dim2_50000_DATOS_dificiles.pt...
+  44,478 grafos (6.6s)
+Cargando dataset_adversarial_topologico_dim2_enriquecido.pt...
+  21,994 grafos (4.3s)
+
+=== Semilla 1/10 ===
+/usr/local/lib/python3.11/dist-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+    epoch   1/100 | train=0.4422 | val=0.3837 | best_val=0.3837 @ep1 | t=27.7s
+    epoch  20/100 | train=0.3151 | val=0.3167 | best_val=0.3167 @ep20 | t=30.5s
+    epoch  40/100 | train=0.3015 | val=0.3073 | best_val=0.3073 @ep40 | t=28.2s
+    epoch  60/100 | train=0.2972 | val=0.3142 | best_val=0.3047 @ep59 | t=28.2s
+    epoch  80/100 | train=0.2937 | val=0.3040 | best_val=0.3037 @ep69 | t=26.6s
+    epoch 100/100 | train=0.2843 | val=0.3013 | best_val=0.3013 @ep100 | t=28.6s
+  best_val_loss: 0.3013 @ epoch 100
+  in-dist test_acc: 82.65%
+  adv dim2 acc:     50.21% (TP=10944 FP=10897 TN=100 FN=53)
+  tiempo semilla: 45.3 min
+
+=== Semilla 2/10 ===
+    epoch   1/100 | train=0.4656 | val=0.4037 | best_val=0.4037 @ep1 | t=27.9s
+    epoch  20/100 | train=0.3246 | val=0.3257 | best_val=0.3257 @ep20 | t=27.1s
+    epoch  40/100 | train=0.2962 | val=0.2910 | best_val=0.2898 @ep36 | t=28.7s
+    epoch  60/100 | train=0.2887 | val=0.2930 | best_val=0.2879 @ep59 | t=27.9s
+    epoch  80/100 | train=0.2904 | val=0.2895 | best_val=0.2866 @ep71 | t=16.4s
+    epoch 100/100 | train=0.2863 | val=0.2951 | best_val=0.2860 @ep97 | t=18.5s
+  best_val_loss: 0.2860 @ epoch 97
+  in-dist test_acc: 83.01%
+  adv dim2 acc:     50.13% (TP=10957 FP=10929 TN=68 FN=40)
+  tiempo semilla: 45.1 min
+
+=== Semilla 3/10 ===
+    epoch   1/100 | train=0.4277 | val=0.3691 | best_val=0.3691 @ep1 | t=26.8s
+    epoch  20/100 | train=0.3542 | val=0.3496 | best_val=0.3496 @ep20 | t=27.5s
+    epoch  40/100 | train=0.3102 | val=0.3102 | best_val=0.3024 @ep36 | t=27.3s
+    epoch  60/100 | train=0.3074 | val=0.2976 | best_val=0.2964 @ep56 | t=27.6s
+    epoch  80/100 | train=0.3039 | val=0.2980 | best_val=0.2941 @ep63 | t=26.9s
+    epoch 100/100 | train=0.3256 | val=0.3281 | best_val=0.2941 @ep63 | t=25.5s
+  best_val_loss: 0.2941 @ epoch 63
+  in-dist test_acc: 81.99%
+  adv dim2 acc:     50.02% (TP=10984 FP=10979 TN=18 FN=13)
+  tiempo semilla: 44.5 min
+
+=== Semilla 4/10 ===
+    epoch   1/100 | train=0.4319 | val=0.3697 | best_val=0.3697 @ep1 | t=26.3s
+    epoch  20/100 | train=0.3219 | val=0.3048 | best_val=0.3048 @ep20 | t=27.8s
+    epoch  40/100 | train=0.3207 | val=0.3127 | best_val=0.2991 @ep34 | t=29.4s
+    epoch  60/100 | train=0.3100 | val=0.2970 | best_val=0.2962 @ep49 | t=28.3s
+    epoch  80/100 | train=0.3162 | val=0.2965 | best_val=0.2907 @ep71 | t=15.1s
+    epoch 100/100 | train=0.3085 | val=0.3017 | best_val=0.2907 @ep71 | t=24.4s
+  best_val_loss: 0.2907 @ epoch 71
+  in-dist test_acc: 82.12%
+  adv dim2 acc:     50.02% (TP=10987 FP=10983 TN=14 FN=10)
+  tiempo semilla: 45.0 min
+
+=== Semilla 5/10 ===
+    epoch   1/100 | train=0.4482 | val=0.4122 | best_val=0.4122 @ep1 | t=24.0s
+    epoch  20/100 | train=0.3201 | val=0.3163 | best_val=0.3152 @ep19 | t=28.4s
+    epoch  40/100 | train=0.3048 | val=0.3056 | best_val=0.3040 @ep39 | t=28.0s
+    epoch  60/100 | train=0.3022 | val=0.3109 | best_val=0.2995 @ep49 | t=28.2s
+    epoch  80/100 | train=0.2974 | val=0.3127 | best_val=0.2995 @ep49 | t=28.7s
+    epoch 100/100 | train=0.2967 | val=0.3173 | best_val=0.2980 @ep98 | t=16.2s
+  best_val_loss: 0.2980 @ epoch 98
+  in-dist test_acc: 82.93%
+  adv dim2 acc:     50.03% (TP=10984 FP=10977 TN=20 FN=13)
+  tiempo semilla: 44.5 min
+
+=== Semilla 6/10 ===
+    epoch   1/100 | train=0.4548 | val=0.3722 | best_val=0.3722 @ep1 | t=24.7s
+    epoch  20/100 | train=0.3160 | val=0.3192 | best_val=0.3161 @ep16 | t=26.2s
+    epoch  40/100 | train=0.3080 | val=0.3086 | best_val=0.3048 @ep30 | t=26.4s
+    epoch  60/100 | train=0.3043 | val=0.3138 | best_val=0.3048 @ep30 | t=28.5s
+    epoch  80/100 | train=0.3037 | val=0.3002 | best_val=0.2997 @ep73 | t=25.7s
+    epoch 100/100 | train=0.3062 | val=0.3113 | best_val=0.2989 @ep82 | t=28.1s
+  best_val_loss: 0.2989 @ epoch 82
+  in-dist test_acc: 81.67%
+  adv dim2 acc:     50.06% (TP=10972 FP=10959 TN=38 FN=25)
+  tiempo semilla: 45.2 min
+
+=== Semilla 7/10 ===
+    epoch   1/100 | train=0.4511 | val=0.3756 | best_val=0.3756 @ep1 | t=27.2s
+    epoch  20/100 | train=0.3273 | val=0.3128 | best_val=0.3128 @ep20 | t=27.3s
+    epoch  40/100 | train=0.2951 | val=0.2971 | best_val=0.2912 @ep36 | t=28.5s
+    epoch  60/100 | train=0.2887 | val=0.2923 | best_val=0.2856 @ep54 | t=28.0s
+    epoch  80/100 | train=0.2861 | val=0.2935 | best_val=0.2840 @ep75 | t=27.1s
+    epoch 100/100 | train=0.2829 | val=0.2928 | best_val=0.2840 @ep75 | t=28.7s
+  best_val_loss: 0.2840 @ epoch 75
+  in-dist test_acc: 82.09%
+  adv dim2 acc:     50.39% (TP=10870 FP=10784 TN=213 FN=127)
+  tiempo semilla: 45.2 min
+
+=== Semilla 8/10 ===
+    epoch   1/100 | train=0.4610 | val=0.3814 | best_val=0.3814 @ep1 | t=28.9s
+    epoch  20/100 | train=0.3253 | val=0.3171 | best_val=0.3110 @ep18 | t=28.0s
+    epoch  40/100 | train=0.3198 | val=0.3078 | best_val=0.2991 @ep37 | t=28.3s
+    epoch  60/100 | train=0.3066 | val=0.3071 | best_val=0.2991 @ep37 | t=27.1s
+    epoch  80/100 | train=0.3029 | val=0.3077 | best_val=0.2973 @ep74 | t=28.0s
+    epoch 100/100 | train=0.3000 | val=0.3032 | best_val=0.2973 @ep74 | t=28.2s
+  best_val_loss: 0.2973 @ epoch 74
+  in-dist test_acc: 82.50%
+  adv dim2 acc:     50.71% (TP=10831 FP=10675 TN=322 FN=166)
+  tiempo semilla: 45.9 min
+
+=== Semilla 9/10 ===
+    epoch   1/100 | train=0.4600 | val=0.3794 | best_val=0.3794 @ep1 | t=27.9s
+    epoch  20/100 | train=0.3717 | val=0.3572 | best_val=0.3547 @ep16 | t=27.6s
+    epoch  40/100 | train=0.3261 | val=0.3182 | best_val=0.3179 @ep38 | t=26.1s
+    epoch  60/100 | train=0.3180 | val=0.3073 | best_val=0.2963 @ep52 | t=27.0s
+    epoch  80/100 | train=0.3145 | val=0.3017 | best_val=0.2963 @ep52 | t=26.3s
+    epoch 100/100 | train=0.3084 | val=0.3027 | best_val=0.2916 @ep95 | t=26.9s
+  best_val_loss: 0.2916 @ epoch 95
+  in-dist test_acc: 82.30%
+  adv dim2 acc:     50.01% (TP=10985 FP=10983 TN=14 FN=12)
+  tiempo semilla: 44.7 min
+
+=== Semilla 10/10 ===
+    epoch   1/100 | train=0.4619 | val=0.3789 | best_val=0.3789 @ep1 | t=27.5s
+    epoch  20/100 | train=0.3336 | val=0.3737 | best_val=0.3275 @ep19 | t=27.8s
+    epoch  40/100 | train=0.3139 | val=0.3220 | best_val=0.3122 @ep30 | t=27.3s
+    epoch  60/100 | train=0.3044 | val=0.3082 | best_val=0.3033 @ep57 | t=26.9s
+    epoch  80/100 | train=0.2994 | val=0.3050 | best_val=0.2966 @ep73 | t=26.8s
+    epoch 100/100 | train=0.2964 | val=0.3089 | best_val=0.2966 @ep73 | t=26.1s
+  best_val_loss: 0.2966 @ epoch 73
+  in-dist test_acc: 82.53%
+  adv dim2 acc:     50.01% (TP=10995 FP=10993 TN=4 FN=2)
+  tiempo semilla: 44.5 min
+
+=== RESUMEN 10 semillas ===
+  in-dist: 82.38 ± 0.40
+  adv d2:  50.16 ± 0.22
+
+[saved] semillas_10_dim2.json

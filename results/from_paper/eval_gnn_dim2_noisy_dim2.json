@@ -1,0 +1,17 @@
+{
+  "nombre": "gnn_dim2_noisy_dim2",
+  "checkpoint": "modelo_final_dim2_dificil.pt",
+  "dataset": "dataset_noisy_topologico_dim2_enriquecido.pt",
+  "n": 21994,
+  "aciertos": 11083,
+  "accuracy": 50.39101573156315,
+  "precision": 50.19857762999907,
+  "recall": 98.84513958352278,
+  "f1": 66.58295304891121,
+  "confusion": {
+    "tp": 10870,
+    "fp": 10784,
+    "tn": 213,
+    "fn": 127
+  }
+}

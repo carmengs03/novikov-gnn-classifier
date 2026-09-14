@@ -1,0 +1,16 @@
+
+=== dim 2: dataset_adversarial_topologico_dim2_enriquecido.pt ===
+  21,994 grafos (5.5s)
+    20,000/21,994 (6s)
+  positivos:      mediana=0.000000, max=0.000732
+  adv negativos:  mediana=0.006988, max=8.103516
+
+=== dim 3: dataset_adversarial_topologico_dim3_enriquecido.pt ===
+  67,552 grafos (11.8s)
+    20,000/67,552 (5s)
+    40,000/67,552 (11s)
+    60,000/67,552 (16s)
+  positivos:      mediana=0.000000, max=0.015625
+  adv negativos:  mediana=0.008169, max=16.460938
+
+[saved] continuidad_4a.json

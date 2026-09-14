@@ -1,0 +1,15 @@
+{
+  "best_value": 0.08880838366816547,
+  "best_params": {
+    "lr": 0.0012159853408094212,
+    "dim_oculta": 64,
+    "batch_size": 16
+  },
+  "n_trials": 35,
+  "n_completos": 20,
+  "n_podados": 15,
+  "dataset": "dataset_enriquecido_dim2_50000_DATOS.pt",
+  "max_epochs": 100,
+  "patience": 15,
+  "seed": 42
+}

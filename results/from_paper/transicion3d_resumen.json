@@ -1,0 +1,66 @@
+{
+  "n_grafos_2d": 3600,
+  "n_grafos_3d": 600,
+  "diferencia_modelo_expandido": 0.0,
+  "varianza_pca": [
+    0.3302537798881531,
+    0.26008492708206177,
+    0.119797483086586
+  ],
+  "predicciones_por_config": [
+    {
+      "config": "3D-i",
+      "descripcion": "Trivial (sin aristas)",
+      "n": 100,
+      "pct_real_novikov": 100.0,
+      "pct_pred_novikov": 100.0,
+      "accuracy_modelo": 100.0,
+      "prob_media": 0.6525670886039734
+    },
+    {
+      "config": "3D-iv",
+      "descripcion": "3 lazos independientes",
+      "n": 100,
+      "pct_real_novikov": 45.0,
+      "pct_pred_novikov": 5.0,
+      "accuracy_modelo": 57.99999999999999,
+      "prob_media": 0.13723814487457275
+    },
+    {
+      "config": "3D-viii",
+      "descripcion": "Prohibida (lazo e3 + e2\u2192e3)",
+      "n": 100,
+      "pct_real_novikov": 0.0,
+      "pct_pred_novikov": 26.0,
+      "accuracy_modelo": 74.0,
+      "prob_media": 0.29954180121421814
+    },
+    {
+      "config": "3D-xviii",
+      "descripcion": "Densa (lazos + e2\u2194e3)",
+      "n": 100,
+      "pct_real_novikov": 52.0,
+      "pct_pred_novikov": 53.0,
+      "accuracy_modelo": 59.0,
+      "prob_media": 0.44732311367988586
+    },
+    {
+      "config": "3D-1",
+      "descripcion": "Conexa e1\u2192e2, e3\u2192e2",
+      "n": 100,
+      "pct_real_novikov": 49.0,
+      "pct_pred_novikov": 51.0,
+      "accuracy_modelo": 98.0,
+      "prob_media": 0.5207227468490601
+    },
+    {
+      "config": "3D-2",
+      "descripcion": "Prohibida conexa e1\u2192e2\u2192e3",
+      "n": 100,
+      "pct_real_novikov": 0.0,
+      "pct_pred_novikov": 5.0,
+      "accuracy_modelo": 95.0,
+      "prob_media": 0.05998387932777405
+    }
+  ]
+}

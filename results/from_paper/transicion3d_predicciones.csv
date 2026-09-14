@@ -1,0 +1,7 @@
+config,descripcion,n,pct_real_novikov,pct_pred_novikov,accuracy_modelo,prob_media
+3D-i,Trivial (sin aristas),100,100.0,100.0,100.0,0.6525670886039734
+3D-iv,3 lazos independientes,100,45.0,5.0,57.99999999999999,0.13723814487457275
+3D-viii,Prohibida (lazo e3 + e2→e3),100,0.0,26.0,74.0,0.29954180121421814
+3D-xviii,Densa (lazos + e2↔e3),100,52.0,53.0,59.0,0.44732311367988586
+3D-1,"Conexa e1→e2, e3→e2",100,49.0,51.0,98.0,0.5207227468490601
+3D-2,Prohibida conexa e1→e2→e3,100,0.0,5.0,95.0,0.05998387932777405

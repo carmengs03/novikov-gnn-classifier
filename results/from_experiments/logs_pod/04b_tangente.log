@@ -1,0 +1,20 @@
+Dispositivo: cuda
+[ckpt] hp={'lr': 0.0011940188529959736, 'dim_oculta': 64, 'batch_size': 64}
+
+Cargando dataset combinado...
+  208,906 grafos (34.9s)
+Cargando adversariales dim3 enriquecidos...
+  67,552 grafos (12.0s)
+Positivos dim=3 seleccionados: 500
+
+Generando positivos tangenciales (sigma=0.001)...
+  positivos tangenciales aceptados: 300/500 (3s)
+Negativos adversariales: 300
+
+Evaluando GNN sobre cada subconjunto...
+  positivos originales    : 100.00% (TP=300 FN=0)
+  positivos re-perturbados: 100.00% (TP=300 FN=0)
+  adversariales negativos : 0.00% (TN=0 FP=300)
+  MEZCLA (3 fuentes)      : 66.67%
+
+[saved] continuidad_4b.json

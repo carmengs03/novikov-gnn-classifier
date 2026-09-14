@@ -1,0 +1,17 @@
+{
+  "nombre": "gnn_conjunto_noisy_dim3",
+  "checkpoint": "modelo_conjunto_dim23_dificil.pt",
+  "dataset": "dataset_noisy_topologico_dim3_enriquecido.pt",
+  "n": 67552,
+  "aciertos": 33777,
+  "accuracy": 50.00148034107058,
+  "precision": 50.00074044456292,
+  "recall": 99.96447181430601,
+  "f1": 66.65942765762121,
+  "confusion": {
+    "tp": 33764,
+    "fp": 33763,
+    "tn": 13,
+    "fn": 12
+  }
+}

@@ -1,0 +1,55 @@
+# =============================================================================
+# .gitignore — novikov-gnn-classifier
+# =============================================================================
+
+# --- Python: virtualenvs, caches, bytecode ---
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Datasets voluminosos (regenerables) ---
+# Los .pt de dataset se excluyen; los checkpoints modelo_*.pt sí se conservan.
+dataset_*.pt
+
+# --- Archivo de trabajo local (nunca subir) ---
+archivo_obsoleto/
+revision_JCAM.zip
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# --- LaTeX: manuscript, thesis and slide sources are kept OUT of the ---
+# public repository. They live locally under LaTeX/ and stay untracked.
+LaTeX/
+
+# --- Material interno (no publicar) ---
+Presentacion_TFM/
+UL_Logo_Principal/
+
+# --- Ficheros temporales / metadatos ---
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# --- IDEs y editores ---
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# --- Internal script (thesis-supervisor slides, not for public release) ---
+src/analysis/generar_presentacion_tutores.py

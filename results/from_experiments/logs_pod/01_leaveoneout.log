@@ -1,0 +1,59 @@
+Dispositivo: cuda
+GPU: NVIDIA A40
+[hp] lr=0.0011940188529959736 dim_oculta=64 batch=64
+
+Cargando dataset_combinado_dim2_dim3_dificiles.pt...
+  208,906 grafos (32.1s)
+Construyendo catálogos topológicos...
+Indexando 208,906 grafos por configuración...
+  40,000/208,906 (7s)
+  80,000/208,906 (13s)
+  120,000/208,906 (19s)
+  160,000/208,906 (26s)
+  200,000/208,906 (32s)
+Indexado en 33.9s. Configs: 42
+
+Barrido 41 configs, seeds=1, epocas=80
+
+[1/41] retenida=dim2_a n_train=206,129 n_test=2,777
+/usr/local/lib/python3.11/dist-packages/torch_geometric/utils/_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+    epoch 1/80 val=0.2958 best=0.2958 @ep1
+    epoch 20/80 val=0.2058 best=0.2058 @ep20
+    epoch 40/80 val=0.2030 best=0.2030 @ep40
+    epoch 60/80 val=0.2031 best=0.1966 @ep56
+    epoch 80/80 val=0.1941 best=0.1903 @ep79
+  seed 0 zero-shot=100.00% (TP=2777 FP=0 TN=0 FN=0) (59.1 min)
+  [saved 1/41]
+
+[2/41] retenida=dim2_b n_train=206,231 n_test=2,675
+    epoch 1/80 val=0.2735 best=0.2735 @ep1
+    epoch 20/80 val=0.2048 best=0.2048 @ep20
+    epoch 40/80 val=0.1960 best=0.1931 @ep38
+    epoch 60/80 val=0.1957 best=0.1914 @ep55
+    epoch 80/80 val=0.2056 best=0.1910 @ep78
+  seed 0 zero-shot=100.00% (TP=2675 FP=0 TN=0 FN=0) (58.7 min)
+  [saved 2/41]
+
+[3/41] retenida=dim2_c n_train=203,705 n_test=5,201
+    epoch 1/80 val=0.2752 best=0.2752 @ep1
+    epoch 20/80 val=0.2097 best=0.2097 @ep20
+    epoch 40/80 val=0.2045 best=0.1933 @ep39
+    epoch 60/80 val=0.1935 best=0.1931 @ep58
+    epoch 80/80 val=0.1958 best=0.1890 @ep65
+  seed 0 zero-shot=45.74% (TP=838 FP=748 TN=1541 FN=2074) (57.4 min)
+  [saved 3/41]
+
+[4/41] retenida=dim2_d n_train=203,788 n_test=5,118
+    epoch 1/80 val=0.2782 best=0.2782 @ep1
+    epoch 20/80 val=0.2045 best=0.2045 @ep20
+    epoch 40/80 val=0.1997 best=0.1968 @ep35
+    epoch 60/80 val=0.1990 best=0.1851 @ep55
+    epoch 80/80 val=0.2000 best=0.1832 @ep76
+  seed 0 zero-shot=100.00% (TP=2814 FP=0 TN=2304 FN=0) (58.1 min)
+  [saved 4/41]
+
+[5/41] retenida=dim2_e n_train=204,596 n_test=4,310
+    epoch 1/80 val=0.2900 best=0.2900 @ep1
+    epoch 20/80 val=0.2205 best=0.2171 @ep18
+    epoch 40/80 val=0.2033 best=0.1983 @ep37

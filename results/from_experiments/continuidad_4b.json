@@ -1,0 +1,41 @@
+{
+  "sigma": 0.001,
+  "n_positivos_seleccionados": 500,
+  "n_positivos_tang_aceptados": 300,
+  "n_negativos_noisy": 300,
+  "eval": {
+    "positivos_originales": {
+      "accuracy": 100.0,
+      "n": 300,
+      "tp": 300,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0
+    },
+    "positivos_tangenciales": {
+      "accuracy": 100.0,
+      "n": 300,
+      "tp": 300,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0
+    },
+    "negativos_noisy": {
+      "accuracy": 0.0,
+      "n": 300,
+      "tp": 0,
+      "fp": 300,
+      "tn": 0,
+      "fn": 0
+    },
+    "mezcla_las_tres_fuentes": {
+      "accuracy": 66.66666666666666,
+      "n": 900,
+      "tp": 600,
+      "fp": 300,
+      "tn": 0,
+      "fn": 0
+    }
+  },
+  "interpretacion": "Si la GNN mantiene TP/(TP+FN) alto en positivos tangenciales y TN/(TN+FP) alto en negativos noisy, la afirmaci\u00f3n del paper se sostiene: aprende algo estructural que separa verdaderos positivos de casi-fallos. Si el TP colapsa en positivos tangenciales, hay artefacto: el modelo estaba memorizando la firma can\u00f3nica que la perturbaci\u00f3n tangente destruye."
+}

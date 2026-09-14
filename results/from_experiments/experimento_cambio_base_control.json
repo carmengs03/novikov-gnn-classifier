@@ -1,0 +1,575 @@
+{
+  "hp": {
+    "k_variantes_por_grafo": 5,
+    "n_semillas": 10,
+    "semilla_haar": 12345
+  },
+  "descripcion": "Control del experimento de cambio de base: eval\u00faa positivos Y negativos tras aplicar transformaci\u00f3n O(n) ortogonal. Sanity: preservaci\u00f3n de la clase Novikov / no-Novikov.",
+  "referencias": [
+    "Bai C. & Meng D. (2001) J. Phys. A 34:1581",
+    "Guti\u00e9rrez Silva C. (2025) TFG Univ. Loyola Andaluc\u00eda, p.24",
+    "Mezzadri F. (2007) Notices AMS 54(5):592"
+  ],
+  "resultados": {
+    "dim2": {
+      "n_semillas": 10,
+      "k_variantes_por_grafo": 5,
+      "resumen": {
+        "positivos_mlp_precision_variantes_pct": {
+          "mean": 54.38727740972221,
+          "std": 4.1962796291957485
+        },
+        "positivos_mlp_acuerdo_pct": {
+          "mean": 53.912223414224876,
+          "std": 3.648785222353836
+        },
+        "positivos_gnn_precision_variantes_pct": {
+          "mean": 81.45291720777391,
+          "std": 0.45669485191811154
+        },
+        "positivos_gnn_acuerdo_pct": {
+          "mean": 73.4314732101627,
+          "std": 0.4232958776639121
+        },
+        "negativos_mlp_precision_variantes_pct": {
+          "mean": 59.13656467133281,
+          "std": 4.8299687708291295
+        },
+        "negativos_mlp_acuerdo_pct": {
+          "mean": 60.550992096681206,
+          "std": 2.3003573473936174
+        },
+        "negativos_gnn_precision_variantes_pct": {
+          "mean": 19.06325437600419,
+          "std": 0.27859191606477174
+        },
+        "negativos_gnn_acuerdo_pct": {
+          "mean": 46.52530408502164,
+          "std": 0.5508041479419576
+        }
+      },
+      "por_semilla": [
+        {
+          "semilla": 0,
+          "mlp_test_acc_in_dist": 85.50876667166192,
+          "positivos": {
+            "n_originales": 3390,
+            "n_variantes": 16950,
+            "sanity_ok": 16904,
+            "sanity_fail": 46,
+            "mlp_precision_variantes_pct": 49.87020648967552,
+            "mlp_acuerdo_pct": 50.165191740412986,
+            "gnn_precision_variantes_pct": 82.15339233038348,
+            "gnn_acuerdo_pct": 74.18289085545723
+          },
+          "negativos": {
+            "n_originales": 3283,
+            "n_variantes": 16415,
+            "sanity_ok": 16415,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 63.27749010051782,
+            "mlp_acuerdo_pct": 61.992080414255256,
+            "gnn_precision_variantes_pct": 19.268961315869632,
+            "gnn_acuerdo_pct": 47.158087115443195
+          }
+        },
+        {
+          "semilla": 1,
+          "mlp_test_acc_in_dist": 79.99400569459014,
+          "positivos": {
+            "n_originales": 3417,
+            "n_variantes": 17085,
+            "sanity_ok": 17022,
+            "sanity_fail": 63,
+            "mlp_precision_variantes_pct": 51.817383669885864,
+            "mlp_acuerdo_pct": 52.10418495756512,
+            "gnn_precision_variantes_pct": 81.63886450102429,
+            "gnn_acuerdo_pct": 73.65525314603454
+          },
+          "negativos": {
+            "n_originales": 3256,
+            "n_variantes": 16280,
+            "sanity_ok": 16280,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 63.82063882063882,
+            "mlp_acuerdo_pct": 62.972972972972975,
+            "gnn_precision_variantes_pct": 19.31203931203931,
+            "gnn_acuerdo_pct": 46.050368550368546
+          }
+        },
+        {
+          "semilla": 2,
+          "mlp_test_acc_in_dist": 85.49378090813727,
+          "positivos": {
+            "n_originales": 3339,
+            "n_variantes": 16695,
+            "sanity_ok": 16633,
+            "sanity_fail": 62,
+            "mlp_precision_variantes_pct": 58.23300389338125,
+            "mlp_acuerdo_pct": 57.430368373764594,
+            "gnn_precision_variantes_pct": 80.85055405810124,
+            "gnn_acuerdo_pct": 72.79424977538184
+          },
+          "negativos": {
+            "n_originales": 3334,
+            "n_variantes": 16670,
+            "sanity_ok": 16670,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 54.751049790041996,
+            "mlp_acuerdo_pct": 56.874625074985005,
+            "gnn_precision_variantes_pct": 19.202159568086383,
+            "gnn_acuerdo_pct": 46.37072585482904
+          }
+        },
+        {
+          "semilla": 3,
+          "mlp_test_acc_in_dist": 81.462610520006,
+          "positivos": {
+            "n_originales": 3281,
+            "n_variantes": 16405,
+            "sanity_ok": 16352,
+            "sanity_fail": 53,
+            "mlp_precision_variantes_pct": 59.500152392563244,
+            "mlp_acuerdo_pct": 58.66504114599208,
+            "gnn_precision_variantes_pct": 81.10941786040841,
+            "gnn_acuerdo_pct": 73.09356903383116
+          },
+          "negativos": {
+            "n_originales": 3392,
+            "n_variantes": 16960,
+            "sanity_ok": 16960,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 52.55896226415094,
+            "mlp_acuerdo_pct": 57.51179245283019,
+            "gnn_precision_variantes_pct": 19.286556603773587,
+            "gnn_acuerdo_pct": 45.76650943396226
+          }
+        },
+        {
+          "semilla": 4,
+          "mlp_test_acc_in_dist": 82.09201258804136,
+          "positivos": {
+            "n_originales": 3294,
+            "n_variantes": 16470,
+            "sanity_ok": 16392,
+            "sanity_fail": 78,
+            "mlp_precision_variantes_pct": 58.797814207650276,
+            "mlp_acuerdo_pct": 57.90528233151184,
+            "gnn_precision_variantes_pct": 80.83181542197936,
+            "gnn_acuerdo_pct": 73.42440801457195
+          },
+          "negativos": {
+            "n_originales": 3379,
+            "n_variantes": 16895,
+            "sanity_ok": 16895,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 56.28884285291507,
+            "mlp_acuerdo_pct": 60.716188221367275,
+            "gnn_precision_variantes_pct": 18.9227582124889,
+            "gnn_acuerdo_pct": 46.0136134951169
+          }
+        },
+        {
+          "semilla": 5,
+          "mlp_test_acc_in_dist": 81.34272441180879,
+          "positivos": {
+            "n_originales": 3320,
+            "n_variantes": 16600,
+            "sanity_ok": 16542,
+            "sanity_fail": 58,
+            "mlp_precision_variantes_pct": 61.15662650602409,
+            "mlp_acuerdo_pct": 59.222891566265055,
+            "gnn_precision_variantes_pct": 81.8132530120482,
+            "gnn_acuerdo_pct": 73.80722891566265
+          },
+          "negativos": {
+            "n_originales": 3353,
+            "n_variantes": 16765,
+            "sanity_ok": 16765,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 50.9812108559499,
+            "mlp_acuerdo_pct": 58.49686847599165,
+            "gnn_precision_variantes_pct": 18.431255592007158,
+            "gnn_acuerdo_pct": 46.54935878317924
+          }
+        },
+        {
+          "semilla": 6,
+          "mlp_test_acc_in_dist": 82.5116139667316,
+          "positivos": {
+            "n_originales": 3341,
+            "n_variantes": 16705,
+            "sanity_ok": 16642,
+            "sanity_fail": 63,
+            "mlp_precision_variantes_pct": 50.78718946423226,
+            "mlp_acuerdo_pct": 50.254414845854534,
+            "gnn_precision_variantes_pct": 81.92158036516012,
+            "gnn_acuerdo_pct": 73.04399880275366
+          },
+          "negativos": {
+            "n_originales": 3332,
+            "n_variantes": 16660,
+            "sanity_ok": 16660,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 64.05762304921969,
+            "mlp_acuerdo_pct": 63.385354141656656,
+            "gnn_precision_variantes_pct": 18.88355342136855,
+            "gnn_acuerdo_pct": 47.56902761104442
+          }
+        },
+        {
+          "semilla": 7,
+          "mlp_test_acc_in_dist": 85.43383785403866,
+          "positivos": {
+            "n_originales": 3356,
+            "n_variantes": 16780,
+            "sanity_ok": 16712,
+            "sanity_fail": 68,
+            "mlp_precision_variantes_pct": 51.44219308700835,
+            "mlp_acuerdo_pct": 51.01311084624554,
+            "gnn_precision_variantes_pct": 81.43623361144219,
+            "gnn_acuerdo_pct": 73.3492252681764
+          },
+          "negativos": {
+            "n_originales": 3317,
+            "n_variantes": 16585,
+            "sanity_ok": 16585,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 59.25233644859813,
+            "mlp_acuerdo_pct": 58.782031956587275,
+            "gnn_precision_variantes_pct": 19.24630690382876,
+            "gnn_acuerdo_pct": 46.97015375339162
+          }
+        },
+        {
+          "semilla": 8,
+          "mlp_test_acc_in_dist": 82.27184175033719,
+          "positivos": {
+            "n_originales": 3335,
+            "n_variantes": 16675,
+            "sanity_ok": 16586,
+            "sanity_fail": 89,
+            "mlp_precision_variantes_pct": 51.32233883058471,
+            "mlp_acuerdo_pct": 51.1184407796102,
+            "gnn_precision_variantes_pct": 80.97751124437781,
+            "gnn_acuerdo_pct": 73.06146926536732
+          },
+          "negativos": {
+            "n_originales": 3338,
+            "n_variantes": 16690,
+            "sanity_ok": 16690,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 63.115638106650685,
+            "mlp_acuerdo_pct": 62.2228879568604,
+            "gnn_precision_variantes_pct": 19.28100659077292,
+            "gnn_acuerdo_pct": 46.7405632115039
+          }
+        },
+        {
+          "semilla": 9,
+          "mlp_test_acc_in_dist": 82.451670912633,
+          "positivos": {
+            "n_originales": 3362,
+            "n_variantes": 16810,
+            "sanity_ok": 16771,
+            "sanity_fail": 39,
+            "mlp_precision_variantes_pct": 50.94586555621654,
+            "mlp_acuerdo_pct": 51.243307555026774,
+            "gnn_precision_variantes_pct": 81.7965496728138,
+            "gnn_acuerdo_pct": 73.90243902439025
+          },
+          "negativos": {
+            "n_originales": 3311,
+            "n_variantes": 16555,
+            "sanity_ok": 16555,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 63.26185442464512,
+            "mlp_acuerdo_pct": 62.55511929930535,
+            "gnn_precision_variantes_pct": 18.797946239806702,
+            "gnn_acuerdo_pct": 46.06463304137723
+          }
+        }
+      ]
+    },
+    "dim3": {
+      "n_semillas": 10,
+      "k_variantes_por_grafo": 5,
+      "resumen": {
+        "positivos_mlp_precision_variantes_pct": {
+          "mean": 19.288226147167048,
+          "std": 2.5223606015051425
+        },
+        "positivos_mlp_acuerdo_pct": {
+          "mean": 21.29475092397761,
+          "std": 2.3488342465980905
+        },
+        "positivos_gnn_precision_variantes_pct": {
+          "mean": 99.10708887325612,
+          "std": 0.030486193786199732
+        },
+        "positivos_gnn_acuerdo_pct": {
+          "mean": 98.37008213418363,
+          "std": 0.08423571283775283
+        },
+        "negativos_mlp_precision_variantes_pct": {
+          "mean": 95.62754544655003,
+          "std": 1.710242415996364
+        },
+        "negativos_mlp_acuerdo_pct": {
+          "mean": 86.95043591985257,
+          "std": 1.238085504761693
+        },
+        "negativos_gnn_precision_variantes_pct": {
+          "mean": 2.955713273384629,
+          "std": 0.09413231359774246
+        },
+        "negativos_gnn_acuerdo_pct": {
+          "mean": 16.689766260118986,
+          "std": 0.18328392264984367
+        }
+      },
+      "por_semilla": [
+        {
+          "semilla": 0,
+          "mlp_test_acc_in_dist": 92.79951348064058,
+          "positivos": {
+            "n_originales": 12287,
+            "n_variantes": 61435,
+            "sanity_ok": 61179,
+            "sanity_fail": 256,
+            "mlp_precision_variantes_pct": 25.350370310083832,
+            "mlp_acuerdo_pct": 27.17343533816228,
+            "gnn_precision_variantes_pct": 99.16171563441036,
+            "gnn_acuerdo_pct": 98.2973874827053
+          },
+          "negativos": {
+            "n_originales": 12378,
+            "n_variantes": 61890,
+            "sanity_ok": 61890,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 91.55921796736145,
+            "mlp_acuerdo_pct": 84.4627565034739,
+            "gnn_precision_variantes_pct": 3.0360316690903213,
+            "gnn_acuerdo_pct": 16.946194861851673
+          }
+        },
+        {
+          "semilla": 1,
+          "mlp_test_acc_in_dist": 93.05088181633894,
+          "positivos": {
+            "n_originales": 12384,
+            "n_variantes": 61920,
+            "sanity_ok": 61700,
+            "sanity_fail": 220,
+            "mlp_precision_variantes_pct": 18.795219638242894,
+            "mlp_acuerdo_pct": 21.23546511627907,
+            "gnn_precision_variantes_pct": 99.10368217054264,
+            "gnn_acuerdo_pct": 98.4124677002584
+          },
+          "negativos": {
+            "n_originales": 12281,
+            "n_variantes": 61405,
+            "sanity_ok": 61405,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 95.81955866786093,
+            "mlp_acuerdo_pct": 86.77306408272942,
+            "gnn_precision_variantes_pct": 3.0632684634801723,
+            "gnn_acuerdo_pct": 16.754335966126536
+          }
+        },
+        {
+          "semilla": 2,
+          "mlp_test_acc_in_dist": 93.5576728157308,
+          "positivos": {
+            "n_originales": 12379,
+            "n_variantes": 61895,
+            "sanity_ok": 61689,
+            "sanity_fail": 206,
+            "mlp_precision_variantes_pct": 15.584457549075045,
+            "mlp_acuerdo_pct": 17.343888844010017,
+            "gnn_precision_variantes_pct": 99.13401728734146,
+            "gnn_acuerdo_pct": 98.42959851361177
+          },
+          "negativos": {
+            "n_originales": 12286,
+            "n_variantes": 61430,
+            "sanity_ok": 61429,
+            "sanity_fail": 1,
+            "mlp_precision_variantes_pct": 98.54956861468338,
+            "mlp_acuerdo_pct": 88.55445222204135,
+            "gnn_precision_variantes_pct": 2.8129578381898095,
+            "gnn_acuerdo_pct": 16.488686309620707
+          }
+        },
+        {
+          "semilla": 3,
+          "mlp_test_acc_in_dist": 93.70362862355564,
+          "positivos": {
+            "n_originales": 12322,
+            "n_variantes": 61610,
+            "sanity_ok": 61402,
+            "sanity_fail": 208,
+            "mlp_precision_variantes_pct": 17.4614510631391,
+            "mlp_acuerdo_pct": 20.590813179678623,
+            "gnn_precision_variantes_pct": 99.07482551533842,
+            "gnn_acuerdo_pct": 98.41421847102743
+          },
+          "negativos": {
+            "n_originales": 12343,
+            "n_variantes": 61715,
+            "sanity_ok": 61715,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 96.32342218261363,
+            "mlp_acuerdo_pct": 89.25058737746092,
+            "gnn_precision_variantes_pct": 3.1353803775419262,
+            "gnn_acuerdo_pct": 16.368792027870047
+          }
+        },
+        {
+          "semilla": 4,
+          "mlp_test_acc_in_dist": 93.36711939995945,
+          "positivos": {
+            "n_originales": 12355,
+            "n_variantes": 61775,
+            "sanity_ok": 61566,
+            "sanity_fail": 209,
+            "mlp_precision_variantes_pct": 20.751112909753136,
+            "mlp_acuerdo_pct": 22.199919061108865,
+            "gnn_precision_variantes_pct": 99.11614730878186,
+            "gnn_acuerdo_pct": 98.32618373128288
+          },
+          "negativos": {
+            "n_originales": 12310,
+            "n_variantes": 61550,
+            "sanity_ok": 61550,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 94.7408610885459,
+            "mlp_acuerdo_pct": 86.20308692120227,
+            "gnn_precision_variantes_pct": 2.9114541023558083,
+            "gnn_acuerdo_pct": 16.619008935824535
+          }
+        },
+        {
+          "semilla": 5,
+          "mlp_test_acc_in_dist": 93.39955402392054,
+          "positivos": {
+            "n_originales": 12187,
+            "n_variantes": 60935,
+            "sanity_ok": 60756,
+            "sanity_fail": 179,
+            "mlp_precision_variantes_pct": 19.399359973742513,
+            "mlp_acuerdo_pct": 20.84188069254123,
+            "gnn_precision_variantes_pct": 99.11380979732502,
+            "gnn_acuerdo_pct": 98.35562484614753
+          },
+          "negativos": {
+            "n_originales": 12478,
+            "n_variantes": 62390,
+            "sanity_ok": 62387,
+            "sanity_fail": 3,
+            "mlp_precision_variantes_pct": 95.71245391889725,
+            "mlp_acuerdo_pct": 86.57156595608271,
+            "gnn_precision_variantes_pct": 2.9812469947106908,
+            "gnn_acuerdo_pct": 16.77352139765988
+          }
+        },
+        {
+          "semilla": 6,
+          "mlp_test_acc_in_dist": 93.61848773565782,
+          "positivos": {
+            "n_originales": 12321,
+            "n_variantes": 61605,
+            "sanity_ok": 61379,
+            "sanity_fail": 226,
+            "mlp_precision_variantes_pct": 20.949598246895544,
+            "mlp_acuerdo_pct": 22.26767307848389,
+            "gnn_precision_variantes_pct": 99.05202499797095,
+            "gnn_acuerdo_pct": 98.17871925980035
+          },
+          "negativos": {
+            "n_originales": 12344,
+            "n_variantes": 61720,
+            "sanity_ok": 61720,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 94.51393389500971,
+            "mlp_acuerdo_pct": 86.56189241736875,
+            "gnn_precision_variantes_pct": 2.9455605962410885,
+            "gnn_acuerdo_pct": 16.992871030460144
+          }
+        },
+        {
+          "semilla": 7,
+          "mlp_test_acc_in_dist": 93.07520778430975,
+          "positivos": {
+            "n_originales": 12287,
+            "n_variantes": 61435,
+            "sanity_ok": 61217,
+            "sanity_fail": 218,
+            "mlp_precision_variantes_pct": 18.793847155530237,
+            "mlp_acuerdo_pct": 20.153007243428014,
+            "gnn_precision_variantes_pct": 99.12590542850167,
+            "gnn_acuerdo_pct": 98.50736550826076
+          },
+          "negativos": {
+            "n_originales": 12378,
+            "n_variantes": 61890,
+            "sanity_ok": 61890,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 96.48085312651479,
+            "mlp_acuerdo_pct": 86.61657779932138,
+            "gnn_precision_variantes_pct": 2.8518338988528034,
+            "gnn_acuerdo_pct": 16.68282436581031
+          }
+        },
+        {
+          "semilla": 8,
+          "mlp_test_acc_in_dist": 92.62923170484491,
+          "positivos": {
+            "n_originales": 12334,
+            "n_variantes": 61670,
+            "sanity_ok": 61398,
+            "sanity_fail": 272,
+            "mlp_precision_variantes_pct": 17.371493432787418,
+            "mlp_acuerdo_pct": 20.27079617317983,
+            "gnn_precision_variantes_pct": 99.07572563645208,
+            "gnn_acuerdo_pct": 98.38657369871899
+          },
+          "negativos": {
+            "n_originales": 12331,
+            "n_variantes": 61655,
+            "sanity_ok": 61655,
+            "sanity_fail": 0,
+            "mlp_precision_variantes_pct": 96.23712594274593,
+            "mlp_acuerdo_pct": 87.03754764414889,
+            "gnn_precision_variantes_pct": 2.919471251317817,
+            "gnn_acuerdo_pct": 16.715594842267457
+          }
+        },
+        {
+          "semilla": 9,
+          "mlp_test_acc_in_dist": 92.92519764848977,
+          "positivos": {
+            "n_originales": 12244,
+            "n_variantes": 61220,
+            "sanity_ok": 60995,
+            "sanity_fail": 225,
+            "mlp_precision_variantes_pct": 18.425351192420777,
+            "mlp_acuerdo_pct": 20.870630512904278,
+            "gnn_precision_variantes_pct": 99.11303495589677,
+            "gnn_acuerdo_pct": 98.39268213002286
+          },
+          "negativos": {
+            "n_originales": 12421,
+            "n_variantes": 62105,
+            "sanity_ok": 62104,
+            "sanity_fail": 1,
+            "mlp_precision_variantes_pct": 96.33845906126722,
+            "mlp_acuerdo_pct": 87.47282827469608,
+            "gnn_precision_variantes_pct": 2.899927542065856,
+            "gnn_acuerdo_pct": 16.555832863698576
+          }
+        }
+      ]
+    }
+  }
+}

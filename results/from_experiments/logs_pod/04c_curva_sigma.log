@@ -1,0 +1,34 @@
+Dispositivo: cuda
+[ckpt] hp={'lr': 0.0011940188529959736, 'dim_oculta': 64, 'batch_size': 64}, semilla=2
+
+Cargando dataset combinado...
+  208,906 grafos (31.3s)
+Test-split: 31,337 grafos
+  positivos seleccionados: 800
+  sigmas: [1e-05, 0.0001, 0.001, 0.01, 0.1, 1.0]
+
+=== sigma = 1e-05 ===
+  positivos: 316, negativos: 316, rechazados: 484
+  accuracy: 50.47%  (TP=313 FP=310 TN=6 FN=3) (4s)
+
+=== sigma = 0.0001 ===
+  positivos: 355, negativos: 355, rechazados: 445
+  accuracy: 50.70%  (TP=352 FP=347 TN=8 FN=3) (2s)
+
+=== sigma = 0.001 ===
+  positivos: 356, negativos: 356, rechazados: 444
+  accuracy: 50.70%  (TP=353 FP=348 TN=8 FN=3) (2s)
+
+=== sigma = 0.01 ===
+  positivos: 356, negativos: 356, rechazados: 444
+  accuracy: 50.84%  (TP=353 FP=347 TN=9 FN=3) (2s)
+
+=== sigma = 0.1 ===
+  positivos: 356, negativos: 356, rechazados: 444
+  accuracy: 52.95%  (TP=353 FP=332 TN=24 FN=3) (2s)
+
+=== sigma = 1.0 ===
+  positivos: 356, negativos: 356, rechazados: 444
+  accuracy: 58.99%  (TP=353 FP=289 TN=67 FN=3) (2s)
+
+[saved] continuidad_4c.json
