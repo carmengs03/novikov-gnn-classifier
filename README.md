@@ -4,7 +4,7 @@ Code, datasets and trained models accompanying the manuscript
 
 > **Coefficient-level and graph-level classifiers for Novikov algebra recognition**
 > Carmen Gutiérrez Silva, Universidad Loyola Andalucía.
-> Submitted to *Journal of Computational and Applied Mathematics* (Elsevier).
+> Submitted to *Neurocomputing* (Elsevier).
 
 ---
 
